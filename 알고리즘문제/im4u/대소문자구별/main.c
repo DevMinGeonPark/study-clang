@@ -14,12 +14,15 @@ int main(void) {
     scanf("%[^\n]", ch);
     fclose(stdin);
 
+    
+
     freopen(OUTPUT,"w",stdout);
-    if(ch=="A" || ch=="Z") {
+    
+    if(*ch>='A' && *ch<='Z')
         printf("대문자");
-    } else {
+    else
         printf("소문자");
-    }
+
     fclose(stdout);
 
     return 0;
