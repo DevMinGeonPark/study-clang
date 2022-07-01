@@ -5,11 +5,18 @@
 
 int main(void) {
 
-    // char ch;
+    int count, temp, sum = 0;
+
     freopen(INPUT,"r",stdin);
+    scanf("%d", &count);
+    for (int i=0; i<count; i++) {
+        scanf("%d",&temp);
+        sum += temp;
+    }
     fclose(stdin);
 
     freopen(OUTPUT,"w",stdout);
+    printf("%d",sum);
     fclose(stdout);
     return 0;
 }
