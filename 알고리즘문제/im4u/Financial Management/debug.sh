@@ -1,2 +1,2 @@
-clang financial_management.c
+clang  main.c
 ./a.out
